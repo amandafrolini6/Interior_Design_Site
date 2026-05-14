@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Studio Aura — arquitetura e interiores de alto padrão em São Paulo. Marina Vasconcelos."
+    />
+    <title>Studio Aura | Arquitetura e Interiores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo-principal">Ir para o conteúdo</a>
+
+    <header class="site-header" id="topo">
+      <div class="site-header__inner">
+        <a class="logo" href="#home">Studio Aura</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+          data-nav-toggle
+        >
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="sr-only">Abrir menu</span>
+        </button>
+        <nav class="site-nav" id="menu-principal" data-site-nav aria-label="Principal">
+          <ul class="site-nav__list">
+            <li><a href="#home" data-i18n="nav_home">Home</a></li>
+            <li><a href="#studio" data-i18n="nav_studio">O Studio</a></li>
+            <li><a href="#portfolio" data-i18n="nav_portfolio">Portfólio</a></li>
+            <li><a href="#contato" data-i18n="nav_contact">Contato</a></li>
+          </ul>
+          <div class="site-nav__actions">
+            <a class="btn btn--ghost-gold" href="#contato" data-i18n="nav_cta">Agendar consultoria</a>
+            <div class="lang" role="group" aria-label="Idioma">
+              <button type="button" class="lang__btn is-active" data-lang="pt" aria-pressed="true">PT</button>
+              <span class="lang__sep" aria-hidden="true">|</span>
+              <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo-principal">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero__media">
+          <video
+            class="hero__video"
+            autoplay
+            muted
+            loop
+            playsinline
+            poster=""
+            aria-hidden="true"
+          >
+            <source src="src/assets/interior-dark-video.mp4" type="video/mp4" />
+          </video>
+          <div class="hero__scrim" aria-hidden="true"></div>
+        </div>
+        <div class="hero__content container">
+          <p class="eyebrow" data-i18n="hero_eyebrow">São Paulo</p>
+          <h1 id="hero-title" class="hero__title display">
+            <span data-i18n="hero_title_1">Espaços que narram sua</span>
+            <em class="hero__accent" data-i18n="hero_title_2">essência.</em>
+          </h1>
+          <p class="hero__lead" data-i18n="hero_lead">
+            Projetos residenciais e comerciais com curadoria editorial, materiais nobres e luz tratada como
+            matéria-prima.
+          </p>
+          <a class="btn btn--ghost-light" href="#portfolio" data-i18n="hero_cta">Conheça nosso trabalho</a>
+        </div>
+      </section>
+
+      <section
+        class="build-sequence"
+        id="build-sequence"
+        data-build-sequence
+        aria-labelledby="build-sequence-title"
+      >
+        <h2 id="build-sequence-title" class="sr-only">Sequência de construção do projeto</h2>
+        <div class="build-sequence__stage" data-build-stage>
+          <video
+            class="build-sequence__video"
+            data-build-video
+            muted
+            playsinline
+            preload="auto"
+            aria-hidden="true"
+          >
+            <source src="assets_/video-camadas.mp4" type="video/mp4" />
+          </video>
+          <div class="build-sequence__scrim" aria-hidden="true"></div>
+          <div class="build-sequence__layers">
+            <article class="build-block build-block--left" data-build-block="0">
+              <p class="build-block__eyebrow">01</p>
+              <h3 class="build-block__title">Camadas de luz</h3>
+              <p class="build-block__text">
+                A leitura do espaço começa pela hierarquia luminosa: difusa, focal e acento. O scroll revela o
+                desenho em tempo real.
+              </p>
+            </article>
+            <article class="build-block build-block--right" data-build-block="1">
+              <p class="build-block__eyebrow">02</p>
+              <h3 class="build-block__title">Materiais em diálogo</h3>
+              <p class="build-block__text">
+                Pedra, madeira e metal conversam em proporções medidas. Cada plano ganha profundidade sem ruído
+                visual.
+              </p>
+            </article>
+            <article class="build-block build-block--left" data-build-block="2">
+              <p class="build-block__eyebrow">03</p>
+              <h3 class="build-block__title">Curadoria final</h3>
+              <p class="build-block__text">
+                O fechamento une mobiliário, arte e rotina. Quando a sequência termina, o projeto respira inteiro.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section methodology" id="studio" aria-labelledby="methodology-title">
+        <div class="container methodology__grid">
+          <div class="methodology__copy">
+            <p class="eyebrow eyebrow--gold" data-i18n="method_eyebrow">Metodologia</p>
+            <h2 id="methodology-title" class="section-title" data-i18n="method_title">O caminho para a excelência</h2>
+            <p class="section-lead" data-i18n="method_lead">
+              Um processo contínuo entre escuta, desenho técnico e curadoria final. Cada etapa existe para que o
+              resultado seja coerente com quem vive o espaço.
+            </p>
+            <ol class="steps" aria-label="Etapas do processo">
+              <li class="steps__item">
+                <span class="steps__num">01</span>
+                <div>
+                  <h3 class="steps__title" data-i18n="step1_title">Imersão e conceito</h3>
+                  <p class="steps__text" data-i18n="step1_text">
+                    Levantamento de rotina, referências e clima desejado. Moodboard e direção visual alinhados ao
+                    briefing.
+                  </p>
+                </div>
+              </li>
+              <li class="steps__item">
+                <span class="steps__num">02</span>
+                <div>
+                  <h3 class="steps__title" data-i18n="step2_title">Detalhamento técnico</h3>
+                  <p class="steps__text" data-i18n="step2_text">
+                    Plantas executivas, especificações e compatibilização com obra e fornecedores.
+                  </p>
+                </div>
+              </li>
+              <li class="steps__item">
+                <span class="steps__num">03</span>
+                <div>
+                  <h3 class="steps__title" data-i18n="step3_title">Curadoria final</h3>
+                  <p class="steps__text" data-i18n="step3_text">
+                    Acabamentos, mobiliário, arte e iluminação em camadas para um ambiente acolhedor e preciso.
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <div class="methodology__media">
+            <div class="video-frame">
+              <video class="video-frame__el" muted loop playsinline controls>
+                <source src="src/assets/video-camadas.mp4" type="video/mp4" />
+              </video>
+              <button type="button" class="video-frame__play" data-video-play aria-label="Reproduzir vídeo">
+                <span class="video-frame__play-icon" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section portfolio" id="portfolio" aria-labelledby="portfolio-title">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow eyebrow--gold" data-i18n="folio_eyebrow">Portfólio selecionado</p>
+            <h2 id="portfolio-title" class="section-title" data-i18n="folio_title">Projetos recentes</h2>
+          </header>
+          <div class="portfolio-grid" role="list">
+            <article class="portfolio-card portfolio-card--tall" style="--delay: 0ms" role="listitem">
+              <a class="portfolio-card__link" href="#contato">
+                <span class="portfolio-card__tag" data-i18n="tag_res">Residencial</span>
+                <figure class="portfolio-card__figure">
+                  <img src="src/assets/projeto-sala.png" alt="Living integrado com painel escuro e iluminação indireta" width="1200" height="1600" loading="lazy" />
+                </figure>
+                <figcaption class="portfolio-card__cap">
+                  <h3 class="portfolio-card__title">Apartamento Jardins II</h3>
+                </figcaption>
+              </a>
+            </article>
+            <article class="portfolio-card portfolio-card--rt-top" style="--delay: 80ms" role="listitem">
+              <a class="portfolio-card__link" href="#contato">
+                <span class="portfolio-card__tag" data-i18n="tag_res">Residencial</span>
+                <figure class="portfolio-card__figure">
+                  <img src="src/assets/projeto-cozinha.png" alt="Cozinha linear com ilha e luminárias esculturais" width="1200" height="800" loading="lazy" />
+                </figure>
+                <figcaption class="portfolio-card__cap">
+                  <h3 class="portfolio-card__title">Casa Alto de Pinheiros</h3>
+                </figcaption>
+              </a>
+            </article>
+            <article class="portfolio-card portfolio-card--rt-bottom" style="--delay: 160ms" role="listitem">
+              <a class="portfolio-card__link" href="#contato">
+                <span class="portfolio-card__tag" data-i18n="tag_com">Comercial</span>
+                <figure class="portfolio-card__figure">
+                  <img src="src/assets/projeto-biblioteca.png" alt="Estante piso-teto com nichos iluminados" width="1200" height="900" loading="lazy" />
+                </figure>
+                <figcaption class="portfolio-card__cap">
+                  <h3 class="portfolio-card__title">Escritório Itaim</h3>
+                </figcaption>
+              </a>
+            </article>
+            <article class="portfolio-card portfolio-card--wide" style="--delay: 240ms" role="listitem">
+              <a class="portfolio-card__link" href="#contato">
+                <span class="portfolio-card__tag" data-i18n="tag_res">Residencial</span>
+                <figure class="portfolio-card__figure">
+                  <img src="src/assets/projeto-quarto.png" alt="Suíte com cabeceira estofada e mesas laterais" width="1600" height="900" loading="lazy" />
+                </figure>
+                <figcaption class="portfolio-card__cap">
+                  <h3 class="portfolio-card__title">Suíte Vila Madalena</h3>
+                </figcaption>
+              </a>
+            </article>
+            <article class="portfolio-card portfolio-card--b1" style="--delay: 320ms" role="listitem">
+              <a class="portfolio-card__link" href="#contato">
+                <span class="portfolio-card__tag" data-i18n="tag_res">Residencial</span>
+                <figure class="portfolio-card__figure">
+                  <img src="src/assets/projeto-sala-2.png" alt="Sala com sofá curvo e tapete texturizado" width="1200" height="1200" loading="lazy" />
+                </figure>
+                <figcaption class="portfolio-card__cap">
+                  <h3 class="portfolio-card__title">Loft Paulista</h3>
+                </figcaption>
+              </a>
+            </article>
+            <article class="portfolio-card portfolio-card--b2" style="--delay: 400ms" role="listitem">
+              <a class="portfolio-card__link" href="#contato">
+                <span class="portfolio-card__tag" data-i18n="tag_res">Residencial</span>
+                <figure class="portfolio-card__figure">
+                  <img src="src/assets/projeto-terracota.png" alt="Ambiente com tonalidade terracota e madeira" width="1200" height="1200" loading="lazy" />
+                </figure>
+                <figcaption class="portfolio-card__cap">
+                  <h3 class="portfolio-card__title">Cobertura Moema</h3>
+                </figcaption>
+              </a>
+            </article>
+            <article class="portfolio-card portfolio-card--b3" style="--delay: 480ms" role="listitem">
+              <a class="portfolio-card__link" href="#contato">
+                <span class="portfolio-card__tag" data-i18n="tag_res">Residencial</span>
+                <figure class="portfolio-card__figure">
+                  <img src="src/assets/projeto-banheiro.png" alt="Banheiro com pedra natural e iluminação difusa" width="1200" height="1200" loading="lazy" />
+                </figure>
+                <figcaption class="portfolio-card__cap">
+                  <h3 class="portfolio-card__title">Spa Residencial Morumbi</h3>
+                </figcaption>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="sobre" aria-labelledby="about-title">
+        <div class="container about__grid">
+          <div class="about__photo">
+            <img
+              src="https://picsum.photos/seed/studioaura-founder/900/1120?grayscale"
+              alt="Retrato em preto e branco da arquiteta Marina Vasconcelos"
+              width="900"
+              height="1120"
+              loading="lazy"
+            />
+          </div>
+          <div class="about__copy">
+            <p class="eyebrow eyebrow--gold" data-i18n="about_eyebrow">A fundadora</p>
+            <h2 id="about-title" class="section-title">Marina Vasconcelos</h2>
+            <p class="about__text" data-i18n="about_p1">
+              Marina conduz cada projeto como um ensaio entre luz, textura e memória afetiva. O estúdio evita fórmulas
+              prontas: o ponto de partida é sempre o habitar real, com cronogramas claros e decisões visuais
+              sustentadas por desenho técnico.
+            </p>
+            <p class="about__text" data-i18n="about_p2">
+              Acreditamos em design consciente, com materiais honestos e soluções que envelhecem bem. O resultado é um
+              ambiente silencioso no melhor sentido: calmo, funcional e profundamente pessoal.
+            </p>
+            <dl class="about__stats" aria-label="Números do estúdio">
+              <div class="about__stat">
+                <dt class="sr-only" data-i18n="stat_projects_label">Projetos concluídos</dt>
+                <dd><span class="about__stat-num">150+</span> <span data-i18n="stat_projects">projetos</span></dd>
+              </div>
+              <div class="about__stat">
+                <dt class="sr-only" data-i18n="stat_years_label">Anos de experiência</dt>
+                <dd><span class="about__stat-num">12</span> <span data-i18n="stat_years">anos de experiência</span></dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials" aria-labelledby="testimonials-title">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow eyebrow--gold" data-i18n="testi_eyebrow">Prova social</p>
+            <h2 id="testimonials-title" class="section-title" data-i18n="testi_title">O que dizem nossos clientes</h2>
+          </header>
+          <div class="testimonials__layout">
+            <figure class="quote-card">
+              <blockquote class="quote-card__text" data-i18n="quote1">
+                A Marina traduziu referências dispersas em um apartamento coeso. A obra fluiu porque o pacote técnico
+                estava impecável.
+              </blockquote>
+              <figcaption class="quote-card__meta">
+                <span class="quote-card__name">Helena Motta</span>
+                <span class="quote-card__loc">Jardins, SP</span>
+              </figcaption>
+            </figure>
+            <figure class="quote-card">
+              <blockquote class="quote-card__text" data-i18n="quote2">
+                Sentimos que cada canto foi pensado para o nosso dia a dia. A iluminação mudou completamente a percepção
+                de tamanho do living.
+              </blockquote>
+              <figcaption class="quote-card__meta">
+                <span class="quote-card__name">Ricardo &amp; Luiza Ayub</span>
+                <span class="quote-card__loc">Pinheiros, SP</span>
+              </figcaption>
+            </figure>
+            <figure class="quote-card">
+              <blockquote class="quote-card__text" data-i18n="quote3">
+                Profissionalismo raro: agenda realista, fornecedores alinhados e um olhar estético consistente do mood
+                ao último interruptor.
+              </blockquote>
+              <figcaption class="quote-card__meta">
+                <span class="quote-card__name">Cláudia Ferrete</span>
+                <span class="quote-card__loc">Vila Nova Conceição, SP</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="section">
+        <div class="container grid-2">
+
+          <div class="contato-header">
+            <p class="contato-eyebrow">ENTRE EM CONTATO</p>
+            <h2 class="contato-titulo">Vamos projetar o seu próximo espaço.</h2>
+            <p class="contato-sub">Atendimentos sob agendamento em São Paulo.</p>
+            <p class="contato-aux"><a href="mailto:studioaura@gmail.com">studioaura@gmail.com</a> · Alameda Santos, 700 — São Paulo, SP</p>
+            <a href="https://wa.me/5511982742031" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
+              INICIAR CONVERSA NO WHATSAPP
+            </a>
+          </div>
+
+          <form id="form" class="hidden fade-right delay-1">
+            <input type="text" id="nome" placeholder="Nome" required>
+            <input type="email" id="email" placeholder="Email" required>
+
+            <select id="tipo" required>
+              <option value="">Tipo de projeto</option>
+              <option value="residencial">Projetos residenciais</option>
+              <option value="comercial">Projetos comerciais</option>
+              <option value="condominial">Projetos condominiais</option>
+              <option value="hospitalidade">Projetos de hospitalidade</option>
+              <option value="consultoria">Consultorias especializadas (layout, décor, arte, iluminação)</option>
+              <option value="obra">Acompanhamento de obra e execução</option>
+              <option value="outro">Outro: projeto personalizado</option>
+            </select>
+
+            <input type="text" id="outro" placeholder="Descreva seu projeto personalizado" style="display:none">
+
+            <textarea id="mensagem" placeholder="Mensagem" required></textarea>
+            <button type="submit" class="btn">Enviar</button>
+          </form>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__grid">
+        <div class="site-footer__brand">
+          <span class="logo logo--footer">Studio Aura</span>
+          <ul class="social" aria-label="Redes sociais">
+            <li>
+              <a href="#" class="social__link" aria-label="Instagram">IG</a>
+            </li>
+            <li>
+              <a href="#" class="social__link" aria-label="Pinterest">PI</a>
+            </li>
+            <li>
+              <a href="#" class="social__link" aria-label="LinkedIn">IN</a>
+            </li>
+          </ul>
+        </div>
+        <div class="site-footer__legal">
+          <p data-i18n="footer_copy">&copy; 2026 Studio Aura. Todos os direitos reservados.</p>
+          <a href="#" data-i18n="footer_privacy">Política de privacidade</a>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      class="fab-wa"
+      href="https://wa.me/5511982742031"
+      rel="noopener noreferrer"
+      aria-label="WhatsApp"
+      data-i18n-aria-wa="WhatsApp"
+    >
+      <span class="fab-wa__glyph" aria-hidden="true"></span>
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="src/js/main.js" defer></script>
+  </body>
+</html>
